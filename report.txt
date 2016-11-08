@@ -1,0 +1,20 @@
+Marking criteria questions:
+1. Does the game window have an appropriate title?
+2. If the window is resized, does the GUI still look appropriate?
+3. Does any menu have appropriate, functional menu items?
+4. Have layout managers been used appropriate to create something that fits the game.
+5. Have dialog windows been used (e.g., Help/About)?
+6. Have listeners been attached to components?
+7. Does the game have any dynamic modality - e.g. operations that are only available once the game has started; separate turns for different users; or 'squares' that cannot be reused once they have already been used once.
+8. Have a good range of components been used?
+
+Answers:
+1. The title of the is window is 'Hangman' which is also the name of the game.
+2. I set a minimum size for the main frame in order to disable resizing it below what would look appropriate. If the window is made larger, all the components remain centered and are still placed appropriately.
+3. The game window has a menubar. It includes the menus 'Game' and 'Help'. 'Game' allows the user to start the game over (i.e. generate a new word) or quit. 'Help' has two items - one containing the rules of the game and the other is the 'About' box.
+4. I have used a BoxLayout for the contentPane and one of the other panels and I have also made use of the FlowLayout which is the default one for the JPanel component.
+5. Dialog windows have been used for the 'Rules' and 'About' menu items and also to inform the player when they have won or lost the game.
+6. Listeners have been attached to the menus and menu items, to all of the buttons representing the letters of the alphabet, which contain most of the action in the game, and to the 'New Word' button used to generate a new word.
+7. The game has a large dynamic modality. Letters that have been guessed (meaning the button has been pressed) cannot be guessed again - the buttons are disabled.
+Throught the game, both the picture of the hanging man and the displayed word are being updated to represent the user's progress and whether he has guessed a letter right or wrong. There is also a text indicator for that which displays both the number of wrong guesses and all of the letters that have been guessed incorrectly.
+8. The components used are JFrame, JPanel, JButton, JLabel, JMenuBar, JMenu, JMenuItem, JOptionPane, Box (to create the glue at the bottom of the contentPane).
